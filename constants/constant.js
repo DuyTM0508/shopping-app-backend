@@ -7,8 +7,8 @@ exports.constant = {
     SERVER_ERROR: 500,
 
     // Token
-    ACCESS_TOKEN_EXPIRE: "15s",
-    REFRESH_TOKEN_EXPIRE: "30m",
+    ACCESS_TOKEN_EXPIRE: "30s",
+    REFRESH_TOKEN_EXPIRE: "2m",
 
     // Messages error
     ERROR_VALIDATION: "Bad Request",
@@ -16,5 +16,6 @@ exports.constant = {
     ERROR_UN_AUTHORIZED: "Un Authorized",
     ERROR_FORBIDDEN: "Forbidden",
     ERROR_SERVER: "Server Error",
+    
   };
   
