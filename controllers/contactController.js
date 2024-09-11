@@ -1,4 +1,5 @@
 const asyncHandler = require("express-async-handler");
+const Contact = require("../models/contactModel");
 
 //! Get all contacts
 const getAllContact = asyncHandler(async (req, res) => {
@@ -24,7 +25,7 @@ const createContact = asyncHandler(async (req, res) => {
   }
 
   res.status(200).json({
-    message: "Post to the backend!",
+    message: `Post to the backend! ${name} ${email} ${phone}`,
   });
 });
 
